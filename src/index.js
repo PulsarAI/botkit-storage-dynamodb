@@ -18,7 +18,7 @@ module.exports = function(config) {
         accessKeyId: config.dynamoAccessKey,
         secretAccessKey: config.dynamoAccessSecret,
         region: config.dynamoRegion
-    });
+    }, config.ddbLocalUri);
 
     var storage = {};
 
